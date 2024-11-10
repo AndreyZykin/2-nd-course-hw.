@@ -1,0 +1,21 @@
+<svg width="1440" height="90" viewBox="0 0 1440 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_b_15_4532)">
+<rect x="-30" width="3220" height="90" fill="#BCEC30"/>
+<rect x="-29.5" y="0.5" width="3219" height="89" stroke="white" stroke-opacity="0.2"/>
+<text fill="#202027" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="30" font-weight="bold" letter-spacing="0.04em"><tspan x="19" y="54.255">&#x412;&#x418;&#x41a;&#x422;&#x41e;&#x420;&#x418;&#x41d;&#x410;</tspan></text>
+<path d="M305 27L309.862 40.1384L323 45L309.862 49.8616L305 63L300.138 49.8616L287 45L300.138 40.1384L305 27Z" fill="#202027"/>
+<text fill="#202027" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="30" font-weight="bold" letter-spacing="0.04em"><tspan x="374" y="54.255">&#x423;&#x413;&#x410;&#x414;&#x410;&#x419; &#x427;&#x418;&#x421;&#x41b;&#x41e;</tspan></text>
+<path d="M716 27L720.862 40.1384L734 45L720.862 49.8616L716 63L711.138 49.8616L698 45L711.138 40.1384L716 27Z" fill="#202027"/>
+<text fill="#202027" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="30" font-weight="bold" letter-spacing="0.04em"><tspan x="785" y="54.255">&#x41f;&#x415;&#x420;&#x415;&#x412;&#x415;&#x420;&#x41d;&#x418; &#x422;&#x415;&#x41a;&#x421;&#x422;</tspan></text>
+<path d="M1180 27L1184.86 40.1384L1198 45L1184.86 49.8616L1180 63L1175.14 49.8616L1162 45L1175.14 40.1384L1180 27Z" fill="#202027"/>
+<text fill="#202027" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="30" font-weight="bold" letter-spacing="0.04em"><tspan x="1249" y="54.255">&#x41f;&#x420;&#x41e;&#x421;&#x422;&#x410;&#x42f; &#x410;&#x420;&#x418;&#x424;&#x41c;&#x415;&#x422;&#x418;&#x41a;&#x410;</tspan></text>
+</g>
+<defs>
+<filter id="filter0_b_15_4532" x="-80" y="-50" width="3320" height="190" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="25"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_15_4532"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_15_4532" result="shape"/>
+</filter>
+</defs>
+</svg>
