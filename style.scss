@@ -35,7 +35,6 @@ body{
     font-size: 24px;
     font-weight: 600;
     text-align: center;
-
 }
 .btn{ display: flex;
     flex-direction: row;
@@ -51,8 +50,9 @@ body{
     font-size: 24px;
     font-weight: 600;
     text-align: center;
-
+text-decoration: none;
 }
+
 .btn:hover{
     color: black;
     background: white;
@@ -120,7 +120,9 @@ height: 1470px;
  padding-top: 94px;
 padding-bottom: 24px;
 color: #FFFFFF;
- }
+scroll-behavior: smooth; 
+}
+
 
  .title__text{
     font-family: Montserrat;
