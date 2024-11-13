@@ -6,18 +6,60 @@ body{
     font-family: "Montserrat", sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 .center{
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
 }
 
 .top{
+
     height: 800px;
     background: rgb(225, 255, 143);
-    padding-top: 196px;
-    padding-bottom: 24px;
+    background-repeat: no-repeat;
+    background-image: url("img/Star-fon.svg"), url("img/Star 2.svg"), 
+    url("img/Star 3.svg"), url("img/Star 4.svg"), url("img/Star 5.svg");
+    background-position: calc(100% + 80px) 4px, calc(100% - 1312px) 88px, calc(100% - 1258px) 50px, calc(100% - 346px) 540px, calc(100% - 436px) 495px;
 }
 
+
+.igra1{
+    position: absolute;
+    margin-top: 69px;
+width: 35px;
+left: 156px;
+
+}
+
+
+    .igra2{
+        position: absolute;
+        margin-top: 94px;
+        left: 63px;
+        width: 57px;
+      }
+
+      .igra3{
+        position: absolute;
+        width: 83px;
+        top: 568px;
+        right: 344px;
+        
+      
+        
+    }
+    .igra4{
+        position: absolute;
+        width: 37px;
+        top: 538px;
+        right: 455px;
+      
+        
+        
+    }
 
 
 .button {
@@ -51,6 +93,7 @@ body{
     font-weight: 600;
     text-align: center;
 text-decoration: none;
+margin-left: 120px;
 }
 
 .btn:hover{
@@ -60,23 +103,23 @@ text-decoration: none;
 
 
 .header__title {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     font-size: 64px;
-    font-weight: 700;
-    line-height: 78px;
-    width: 768px;
+    width: 769px;
     padding-bottom: 24px;
     padding-top: 156px;
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-weight: 700;
+    padding-left: 120px;
+   
 }
 
 .header__text {
         font-size: 24px;
-        font-weight: 400;
         line-height: 32px;
         width: 720px;
         padding-bottom: 48px;
+        padding-left: 120px;
         
 }
 
@@ -90,6 +133,7 @@ text-decoration: none;
     display: flex;
     align-items: center;
     height: 90px;
+    overflow: hidden;
 
 
     &__text{
@@ -104,10 +148,15 @@ text-decoration: none;
     }
 }
 
+
 .container {
     background: #202027;
 height: 1470px;
- }
+background-image: url(img/Star\ 12.svg);
+background-repeat: no-repeat;
+background-position: calc(100% + 10px) 150px;
+}
+ 
 
 .title{
    
@@ -136,28 +185,8 @@ scroll-behavior: smooth;
     color: #FFFFFF;
   }
 
-  .igra2{
-    position: absolute;
-    display: flex;
-    margin-top: 94px;
-    right: 1600px;
-  }
-.igra1{
-    position: absolute;
-    margin-top: 69px;
-      }
-      .igra3{
-        position: absolute;
-        margin-left: 450px;
-        margin-top: 100px;
-        width: 83px;
-    }
-    .igra4{
-        position: absolute;
-        margin-left: 400px;
-        margin-top: 60px;
-        width: 37px;
-    }
+
+
     .for-box{
         height: 1550px;
         background-color: rgb(32, 32, 39);
@@ -186,14 +215,6 @@ scroll-behavior: smooth;
     }
 .cart1 {
 height: 473px;
-}
-.cart2 .cart5 {
-height: 512px;
-}
-.cart4 .cart6 {
-height: 551px;
-}
-.cart1{
 background-color: #fff;
 width: 378px;
 border-radius: 30px;
@@ -203,6 +224,7 @@ border-radius: 30px;
 background-color: #fff;
 width: 378px;
 border-radius: 30px;
+height: 512px;
 
 }
 .cart3{
@@ -211,14 +233,14 @@ width: 378px;
 border-radius: 30px;
 transform: scale(1.0);
 transition: ls;
-
-
+height: 473px;
 }
 .cart4{
 background-color: #fff;
 width: 378px;
 margin-top: 36px;
 border-radius: 30px;
+height: 551px;
 
 
 }
@@ -227,15 +249,14 @@ background-color: #fff;
 width: 378px;
 margin-top: 40px;
 border-radius: 30px;
-
-
-
+height: 512px;
 }
 .cart6{
 background-color: #fff;
 width: 378px;
 margin-top: 36px;
 border-radius: 30px;
+height: 551px;
 }
 .cart1:hover{
 background-color: #fff;
