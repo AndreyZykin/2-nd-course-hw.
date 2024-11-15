@@ -22,7 +22,7 @@ a{
     background-repeat: no-repeat;
     background-image: url("img/Star-fon.svg"), url("img/Star 2.svg"), 
     url("img/Star 3.svg"), url("img/Star 4.svg"), url("img/Star 5.svg");
-    background-position: calc(100% + 80px) 4px, calc(100% - 1312px) 88px, calc(100% - 1258px) 50px, calc(100% - 346px) 540px, calc(100% - 436px) 495px;
+    background-position: calc(100% - 0px), calc(0% + 63px) 94px, calc(0% + 156px) 69px, calc(100% - 344px) 568px, calc(100% - 455px) 538px;
 }
 
 
@@ -61,23 +61,6 @@ left: 156px;
         
     }
 
-
-.button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10;
-    width: 247px;
-    height: 66px;
-    border: 1px solid rgb(32, 32, 39);
-    border-radius: 60px;
-    background: rgb(32, 32, 39);
-    color: #FFFFFF;
-    font-size: 24px;
-    font-weight: 600;
-    text-align: center;
-}
 .btn{ display: flex;
     flex-direction: row;
     justify-content: center;
@@ -93,7 +76,6 @@ left: 156px;
     font-weight: 600;
     text-align: center;
 text-decoration: none;
-margin-left: 120px;
 }
 
 .btn:hover{
@@ -106,11 +88,11 @@ margin-left: 120px;
     font-size: 64px;
     width: 769px;
     padding-bottom: 24px;
-    padding-top: 156px;
+    padding-top: 196px;
     color: rgb(32, 32, 39);
     font-family: Montserrat;
     font-weight: 700;
-    padding-left: 120px;
+    line-height: 78px;
    
 }
 
@@ -119,8 +101,10 @@ margin-left: 120px;
         line-height: 32px;
         width: 720px;
         padding-bottom: 48px;
-        padding-left: 120px;
-        
+        font-weight: 400;
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        margin-top: 24px;
 }
 
 
@@ -152,9 +136,9 @@ margin-left: 120px;
 .container {
     background: #202027;
 height: 1470px;
-background-image: url(img/Star\ 12.svg);
+background-image: url(img/Star\ 12.svg), url(img/Star\ 11.svg), url(img/Star\ 12mini.svg);
 background-repeat: no-repeat;
-background-position: calc(100% + 10px) 150px;
+background-position: calc(100% + 10px) 150px, calc(0% + 25px) 770px, calc(0% + 40px) 820px;
 }
  
 
@@ -162,10 +146,8 @@ background-position: calc(100% + 10px) 150px;
    
    font-size: 64px;
    font-weight: 700;
-   line-height: 78px;
    text-align: left;
    width: 314px;
-   height: 78px;
  padding-top: 94px;
 padding-bottom: 24px;
 color: #FFFFFF;
