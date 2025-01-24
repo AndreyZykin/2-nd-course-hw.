@@ -40,5 +40,6 @@ let user = {
     isAdmin: true };
     console.log(user);
 
-let yourName = prompt("Как вас зовут?");
- alert("Привет, " + yourName + "!");
+    let userName = prompt("Как вас зовут?");
+    alert(`Привет, ${userName}!`);
+    

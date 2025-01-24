@@ -9,7 +9,7 @@
     background-image: none;
     background-image: url("img/Vectorfon.svg"), url("img/Star 2.svg"), 
     url("img/Star 3.svg"), url("img/Star 4.svg"), url("img/Star 5.svg");
-    background-position: calc(100% - 0px), calc(0% + 63px) 94px, calc(0% + 156px) 69px, calc(100% - 344px) 568px, calc(100% - 455px) 538px;
+    background-position: calc(100% - 0px) 0px, calc(0% + 63px) 94px, calc(0% + 156px) 69px, calc(100% - 344px) 568px, calc(100% - 455px) 538px;
 
 }
 .header__title{
@@ -41,11 +41,12 @@
     top: 649px;
     left: -6px;
     padding: 16px 24px 16px 24px;
- }
+    overflow: scroll;
+}
 .banner__text{
     font-size: 16px;
     font-weight: 700;
-    line-height: 110%;
+    line-height: 18px;
 }
 .container{
     display: none;
