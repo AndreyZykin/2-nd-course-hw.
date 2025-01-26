@@ -1,4 +1,4 @@
-@media (max-width: 376px) {
+@media (max-width: 375px) {
     .center {
         padding-left: 16px;
         padding-right: 16px;
@@ -10,7 +10,7 @@
     background-image: url("img/Vectorfon.svg"), url("img/Star 2.svg"), 
     url("img/Star 3.svg"), url("img/Star 4.svg"), url("img/Star 5.svg");
     background-position: calc(100% - 0px) 0px, calc(0% + 63px) 94px, calc(0% + 156px) 69px, calc(100% - 344px) 568px, calc(100% - 455px) 538px;
-
+   display:"max-width: 100%;"
 }
 .header__title{
         width: 262px;
@@ -54,9 +54,8 @@
 
 
 .minigame {
-    padding-top: 48px;
+    padding-bottom: 48px;
     &__title {
-        padding-bottom: 48px;
         color: rgb(255, 255, 255);
         font-family: inherit;
         font-size: 40px;
@@ -64,6 +63,7 @@
         line-height: 49px;
         text-align: left;
         margin-bottom: 16px;
+        overflow-x: hidden;
  }
 }
 .preview-game{
