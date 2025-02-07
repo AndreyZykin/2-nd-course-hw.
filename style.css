@@ -17,7 +17,7 @@ a {
 }
 
 .top {
-  height: 800px;
+  height: 710px;
   background: rgb(225, 255, 143);
   background-repeat: no-repeat;
   background-image: url("img/Star-fon.svg"), url("img/Star 2.svg"), url("img/Star 3.svg"), url("img/Star 4.svg"), url("img/Star 5.svg");
@@ -77,7 +77,6 @@ a {
 
 .header__title {
   font-size: 64px;
-  width: 769px;
   padding-top: 196px;
   color: rgb(32, 32, 39);
   font-family: Montserrat;
@@ -88,7 +87,6 @@ a {
 .header__text {
   font-size: 24px;
   line-height: 32px;
-  width: 720px;
   padding-bottom: 48px;
   font-weight: 400;
   color: rgb(32, 32, 39);
@@ -97,16 +95,13 @@ a {
 }
 
 .banner {
-  gap: 10px;
-  border: 1px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
   background: rgb(188, 236, 48);
   display: flex;
   align-items: center;
   height: 90px;
-  overflow: scroll;
+  overflow-x: hidden;
 }
 .banner__text {
   font-family: Montserrat;
@@ -117,6 +112,16 @@ a {
   padding-right: 51px;
   padding-left: 51px;
   white-space: nowrap;
+}
+.banner__img {
+  color: rgb(32, 32, 39);
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 4%;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .container {
@@ -473,11 +478,9 @@ a {
     height: 700px;
     background-image: none;
     background-image: url("img/Vectorfon.svg"), url("img/Star 2.svg"), url("img/Star 3.svg"), url("img/Star 4.svg"), url("img/Star 5.svg");
-    background-position: calc(100% - 0px) 0px, calc(0% + 63px) 94px, calc(0% + 156px) 69px, calc(100% - 344px) 568px, calc(100% - 455px) 538px;
-    display: "max-width: 100%;";
+    background-position: calc(100% - 0px) 0px, calc(0% + 37px) 97px, calc(0% + 91px) 64px, calc(100% - 34px) 580px, calc(100% - 86px) 557px;
   }
   .header__title {
-    width: 262px;
     padding-top: 147px;
     font-size: 40px;
     font-weight: 700;
@@ -486,7 +489,6 @@ a {
     font-family: Montserrat;
   }
   .header__text {
-    width: 296px;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
@@ -500,12 +502,16 @@ a {
     text-align: center;
     pointer-events: none;
   }
+  .btn__link {
+    display: flex;
+    justify-content: center;
+  }
   .banner {
     height: 51px;
     top: 649px;
     left: -6px;
     padding: 16px 24px 16px 24px;
-    overflow: scroll;
+    overflow-x: hidden;
   }
   .banner__text {
     font-size: 16px;
@@ -517,6 +523,7 @@ a {
   }
   .minigame {
     padding-bottom: 48px;
+    overflow-x: hidden;
   }
   .minigame__title {
     color: rgb(255, 255, 255);
@@ -526,7 +533,6 @@ a {
     line-height: 49px;
     text-align: left;
     margin-bottom: 16px;
-    overflow-x: hidden;
   }
   .preview-game {
     position: relative;

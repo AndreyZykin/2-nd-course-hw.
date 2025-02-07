@@ -17,7 +17,7 @@ a{
 
 .top{
 
-    height: 800px;
+    height: 710px;
     background: rgb(225, 255, 143);
     background-repeat: no-repeat;
     background-image: url("img/Star-fon.svg"), url("img/Star 2.svg"), 
@@ -86,7 +86,6 @@ text-decoration: none;
 
 .header__title {
     font-size: 64px;
-    width: 769px;
     padding-top: 196px;
     color: rgb(32, 32, 39);
     font-family: Montserrat;
@@ -98,7 +97,6 @@ text-decoration: none;
 .header__text {
         font-size: 24px;
         line-height: 32px;
-        width: 720px;
         padding-bottom: 48px;
         font-weight: 400;
         color: rgb(32, 32, 39);
@@ -108,15 +106,12 @@ text-decoration: none;
 
 
 .banner{
-    gap: 10px;
-    border: 1px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(50px);
     background: rgb(188, 236, 48);
     display: flex;
     align-items: center;
     height: 90px;
-    overflow: scroll;
+    overflow-x: hidden;
 
 
     &__text{
@@ -128,6 +123,17 @@ text-decoration: none;
         padding-right: 51px;
         padding-left: 51px;
         white-space: nowrap;
+    }
+
+    &__img{
+        color: rgb(32, 32, 39);
+        font-family: inherit;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 4%;
+        text-align: left;
+        text-transform: uppercase;
     }
 }
 
