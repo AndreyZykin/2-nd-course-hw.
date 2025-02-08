@@ -17,7 +17,7 @@ a {
 }
 
 .top {
-  height: 800px;
+  height: 710px;
   background: rgb(225, 255, 143);
   background-repeat: no-repeat;
   background-image: url("img/Star-fon.svg"), url("img/Star 2.svg"), url("img/Star 3.svg"), url("img/Star 4.svg"), url("img/Star 5.svg");
@@ -77,8 +77,6 @@ a {
 
 .header__title {
   font-size: 64px;
-  width: 769px;
-  padding-bottom: 24px;
   padding-top: 196px;
   color: rgb(32, 32, 39);
   font-family: Montserrat;
@@ -89,7 +87,6 @@ a {
 .header__text {
   font-size: 24px;
   line-height: 32px;
-  width: 720px;
   padding-bottom: 48px;
   font-weight: 400;
   color: rgb(32, 32, 39);
@@ -98,16 +95,13 @@ a {
 }
 
 .banner {
-  gap: 10px;
-  border: 1px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
   background: rgb(188, 236, 48);
   display: flex;
   align-items: center;
   height: 90px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .banner__text {
   font-family: Montserrat;
@@ -118,6 +112,16 @@ a {
   padding-right: 51px;
   padding-left: 51px;
   white-space: nowrap;
+}
+.banner__img {
+  color: rgb(32, 32, 39);
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 4%;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .container {
@@ -330,4 +334,241 @@ a {
   gap: 32px;
   -moz-columns: 3;
        columns: 3;
+}
+
+.fon__star {
+  position: absolute;
+}
+.fon__star_big {
+  left: 933px;
+  top: 77px;
+  transform: rotate(-6.77deg);
+}
+.fon__star_medium {
+  left: 27.97px;
+  top: 770px;
+  transform: rotate(5.45deg);
+}
+.fon__star_litle {
+  left: 45.18px;
+  top: 822px;
+  transform: rotate(5.45deg);
+}
+.fon__star_topm {
+  left: 1156px;
+  top: 93px;
+  transform: rotate(5.45deg);
+}
+.fon__star_topl {
+  left: 1199px;
+  top: 126px;
+  transform: rotate(7.08deg);
+}
+.fon__star_butm {
+  left: 1198px;
+  bottom: 65px;
+}
+.fon__star_butl {
+  left: 1128px;
+  bottom: 45px;
+}
+
+.minigame {
+  position: relative;
+  padding-top: 46px;
+  padding-bottom: 144px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background: rgb(32, 32, 39);
+}
+.minigame__title {
+  color: rgb(255, 255, 255);
+  font-family: inherit;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+.minigame__conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.preview-game {
+  margin-top: 32px;
+  display: flex;
+  border-radius: 30px;
+  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+  background: rgb(255, 255, 255);
+  justify-content: space-between;
+}
+.preview-game__text {
+  padding: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.preview-game__title {
+  color: rgb(32, 32, 39);
+  font-family: inherit;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  text-align: left;
+}
+.preview-game__description {
+  color: rgb(32, 32, 39);
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  margin-top: 24px;
+}
+.preview-game__button {
+  margin-top: 36px;
+  padding: 16px 28px 16px 28px;
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  color: rgb(255, 255, 255);
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  text-align: center;
+  width: 247px;
+  height: 66px;
+}
+.preview-game__button:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(32, 32, 39);
+}
+.preview-game__img {
+  max-width: 600px;
+  max-height: 500px;
+  border-radius: 30px;
+}
+
+.footer {
+  height: 150px;
+  background-color: rgb(189, 237, 53);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer__title {
+  color: rgb(0, 0, 0);
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  text-align: center;
+}
+
+@media (max-width: 375px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    height: 700px;
+    background-image: none;
+    background-image: url("img/Vectorfon.svg"), url("img/Star 2.svg"), url("img/Star 3.svg"), url("img/Star 4.svg"), url("img/Star 5.svg");
+    background-position: calc(100% - 0px) 0px, calc(0% + 37px) 97px, calc(0% + 91px) 64px, calc(100% - 34px) 580px, calc(100% - 86px) 557px;
+  }
+  .header__title {
+    padding-top: 147px;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 49px;
+    font-family: Montserrat;
+  }
+  .header__text {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .btn {
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+    text-align: center;
+    pointer-events: none;
+  }
+  .btn__link {
+    display: flex;
+    justify-content: center;
+  }
+  .banner {
+    height: 51px;
+    top: 649px;
+    left: -6px;
+    padding: 16px 24px 16px 24px;
+    overflow-x: hidden;
+  }
+  .banner__text {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+  }
+  .container {
+    display: none;
+  }
+  .minigame {
+    padding-bottom: 48px;
+    overflow-x: hidden;
+  }
+  .minigame__title {
+    color: rgb(255, 255, 255);
+    font-family: inherit;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  .preview-game {
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .preview-game--right {
+    flex-direction: column;
+  }
+  .preview-game__text {
+    padding: 29px 29px 32px 29px;
+  }
+  .preview-game__title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .preview-game__description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .preview-game__img {
+    height: 285px;
+    width: auto;
+  }
+  .preview-game__button {
+    width: 285px;
+    height: 55px;
+    padding: 16px 28px 16px 28px;
+    font-size: 16px;
+  }
+  .footer {
+    height: 100px;
+  }
+  .footer__title {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

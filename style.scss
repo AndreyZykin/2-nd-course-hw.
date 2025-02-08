@@ -17,7 +17,7 @@ a{
 
 .top{
 
-    height: 800px;
+    height: 710px;
     background: rgb(225, 255, 143);
     background-repeat: no-repeat;
     background-image: url("img/Star-fon.svg"), url("img/Star 2.svg"), 
@@ -86,8 +86,6 @@ text-decoration: none;
 
 .header__title {
     font-size: 64px;
-    width: 769px;
-    padding-bottom: 24px;
     padding-top: 196px;
     color: rgb(32, 32, 39);
     font-family: Montserrat;
@@ -99,7 +97,6 @@ text-decoration: none;
 .header__text {
         font-size: 24px;
         line-height: 32px;
-        width: 720px;
         padding-bottom: 48px;
         font-weight: 400;
         color: rgb(32, 32, 39);
@@ -109,15 +106,12 @@ text-decoration: none;
 
 
 .banner{
-    gap: 10px;
-    border: 1px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(50px);
     background: rgb(188, 236, 48);
     display: flex;
     align-items: center;
     height: 90px;
-    overflow: hidden;
+    overflow-x: hidden;
 
 
     &__text{
@@ -129,6 +123,17 @@ text-decoration: none;
         padding-right: 51px;
         padding-left: 51px;
         white-space: nowrap;
+    }
+
+    &__img{
+        color: rgb(32, 32, 39);
+        font-family: inherit;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 4%;
+        text-align: left;
+        text-transform: uppercase;
     }
 }
 
@@ -333,3 +338,137 @@ gap: 32px;
 columns: 3;
 }
 
+.fon {
+    &__star {
+        position: absolute;
+        &_big{
+            left: 933px;
+            top: 77px;
+            transform: rotate(-6.77deg);
+        }
+        &_medium{
+            left: 27.97px;
+            top: 770px;
+            transform: rotate(5.45deg);
+        }
+        &_litle{
+            left: 45.18px;
+            top: 822px;
+            transform: rotate(5.45deg);
+        }
+        &_topm{
+            left: 1156px;
+            top: 93px;
+            transform: rotate(5.45deg);
+        }
+        &_topl{
+            left: 1199px;
+            top: 126px;
+            transform: rotate(7.08deg);
+        }
+        &_butm{
+            left: 1198px;
+            bottom: 65px;
+        }
+        &_butl{
+            left: 1128px;
+            bottom: 45px;
+        }  
+    }
+}
+.minigame {
+    position: relative;
+    padding-top: 46px;
+    padding-bottom: 144px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: rgb(32, 32, 39);
+    &__title {
+        color: rgb(255, 255, 255);
+        font-family: inherit;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    &__conteiner {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+.preview-game {
+    margin-top: 32px;
+    display: flex;
+    border-radius: 30px;
+    box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+    background: rgb(255, 255, 255);
+    justify-content: space-between;
+    &__text {
+        padding: 48px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__title {
+        color: rgb(32, 32, 39);
+        font-family: inherit;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+        text-align: left;
+    }
+    &__description {
+        color: rgb(32, 32, 39);
+        font-family: inherit;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+        margin-top: 24px;
+    }
+    &__button {
+        margin-top: 36px;
+        padding: 16px 28px 16px 28px;
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        color: rgb(255, 255, 255);
+        font-family: inherit;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+        text-align: center;
+        width: 247px;
+        height: 66px;
+        &:hover {
+        background: rgb(255, 255, 255);
+        color: rgb(32, 32, 39);
+    }
+    }
+    &__img {
+        max-width: 600px;
+        max-height: 500px;
+        border-radius: 30px;
+    }
+}
+
+.footer {
+    height: 150px;
+    background-color: rgb(189, 237, 53);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &__title {
+        color: rgb(0, 0, 0);
+        font-family: inherit;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        text-align: center;
+    }
+}
+
+@import 'mobile'
