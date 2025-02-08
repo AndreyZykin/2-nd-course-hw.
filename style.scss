@@ -17,11 +17,11 @@ a{
 
 .top{
 
-    height: 800px;
+    height: 710px;
     background: rgb(225, 255, 143);
     background-repeat: no-repeat;
-    background-image: url("img/Star-fon.svg"), url("img/Star 2.svg"), 
-    url("img/Star 3.svg"), url("img/Star 4.svg"), url("img/Star 5.svg");
+    background-image: url("img/Star-fon.svg"), url("img/Star2.svg"), 
+    url("img/Star3.svg"), url("img/Star4.svg"), url("img/Star5.svg");
     background-position: calc(100% - 0px), calc(0% + 63px) 94px, calc(0% + 156px) 69px, calc(100% - 344px) 568px, calc(100% - 455px) 538px;
 }
 
@@ -86,7 +86,6 @@ text-decoration: none;
 
 .header__title {
     font-size: 64px;
-    width: 769px;
     padding-top: 196px;
     color: rgb(32, 32, 39);
     font-family: Montserrat;
@@ -98,7 +97,6 @@ text-decoration: none;
 .header__text {
         font-size: 24px;
         line-height: 32px;
-        width: 720px;
         padding-bottom: 48px;
         font-weight: 400;
         color: rgb(32, 32, 39);
@@ -108,15 +106,12 @@ text-decoration: none;
 
 
 .banner{
-    gap: 10px;
-    border: 1px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(50px);
     background: rgb(188, 236, 48);
     display: flex;
     align-items: center;
     height: 90px;
-    overflow: scroll;
+    overflow-x: hidden;
 
 
     &__text{
@@ -125,9 +120,20 @@ text-decoration: none;
         font-weight: 700;
         line-height: 33px;
         text-transform: uppercase;
+        white-space: nowrap;
+    }
+
+    &__img{
+        color: rgb(32, 32, 39);
+        font-family: inherit;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 4%;
+        text-align: left;
+        text-transform: uppercase;
         padding-right: 51px;
         padding-left: 51px;
-        white-space: nowrap;
     }
 }
 
@@ -135,7 +141,7 @@ text-decoration: none;
 .container {
     background: #202027;
 height: 1470px;
-background-image: url(img/Star\ 12.svg), url(img/Star\ 11.svg), url(img/Star\ 12mini.svg);
+background-image: url(img/Star\ 12.svg), url(img/Star\ 11.svg), url(img/Star\12mini.svg);
 background-repeat: no-repeat;
 background-position: calc(100% + 10px) 150px, calc(0% + 25px) 770px, calc(0% + 40px) 820px;
 }
@@ -326,10 +332,10 @@ margin-top: 16px;
 margin-bottom: 20px;
 } 
 .cart-box{
-margin-top: 40px;
 display: flex;
 gap: 32px;
 columns: 3;
+align-items: flex-start;
 }
 
 .fon {
@@ -404,8 +410,9 @@ columns: 3;
         padding: 48px;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
+        align-content: flex-start;
     }
     &__title {
         color: rgb(32, 32, 39);
@@ -443,8 +450,7 @@ columns: 3;
     }
     }
     &__img {
-        max-width: 600px;
-        max-height: 500px;
+       height: 500px;
         border-radius: 30px;
     }
 }
