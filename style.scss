@@ -20,8 +20,8 @@ a{
     height: 710px;
     background: rgb(225, 255, 143);
     background-repeat: no-repeat;
-    background-image: url("img/Star-fon.svg"), url("img/Star 2.svg"), 
-    url("img/Star 3.svg"), url("img/Star 4.svg"), url("img/Star 5.svg");
+    background-image: url("img/Star-fon.svg"), url("img/Star2.svg"), 
+    url("img/Star3.svg"), url("img/Star4.svg"), url("img/Star5.svg");
     background-position: calc(100% - 0px), calc(0% + 63px) 94px, calc(0% + 156px) 69px, calc(100% - 344px) 568px, calc(100% - 455px) 538px;
 }
 
@@ -120,9 +120,20 @@ text-decoration: none;
         font-weight: 700;
         line-height: 33px;
         text-transform: uppercase;
+        white-space: nowrap;
+    }
+
+    &__img{
+        color: rgb(32, 32, 39);
+        font-family: inherit;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 4%;
+        text-align: left;
+        text-transform: uppercase;
         padding-right: 51px;
         padding-left: 51px;
-        white-space: nowrap;
     }
 
     &__img{
@@ -332,10 +343,10 @@ margin-top: 16px;
 margin-bottom: 20px;
 } 
 .cart-box{
-margin-top: 40px;
 display: flex;
 gap: 32px;
 columns: 3;
+align-items: flex-start;
 }
 
 .fon {
@@ -410,8 +421,9 @@ columns: 3;
         padding: 48px;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
+        align-content: flex-start;
     }
     &__title {
         color: rgb(32, 32, 39);
@@ -449,8 +461,7 @@ columns: 3;
     }
     }
     &__img {
-        max-width: 600px;
-        max-height: 500px;
+       height: 500px;
         border-radius: 30px;
     }
 }

@@ -20,7 +20,7 @@ a {
   height: 710px;
   background: rgb(225, 255, 143);
   background-repeat: no-repeat;
-  background-image: url("img/Star-fon.svg"), url("img/Star 2.svg"), url("img/Star 3.svg"), url("img/Star 4.svg"), url("img/Star 5.svg");
+  background-image: url("img/Star-fon.svg"), url("img/Star2.svg"), url("img/Star3.svg"), url("img/Star4.svg"), url("img/Star5.svg");
   background-position: calc(100% - 0px), calc(0% + 63px) 94px, calc(0% + 156px) 69px, calc(100% - 344px) 568px, calc(100% - 455px) 538px;
 }
 
@@ -109,9 +109,19 @@ a {
   font-weight: 700;
   line-height: 33px;
   text-transform: uppercase;
+  white-space: nowrap;
+}
+.banner__img {
+  color: rgb(32, 32, 39);
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 4%;
+  text-align: left;
+  text-transform: uppercase;
   padding-right: 51px;
   padding-left: 51px;
-  white-space: nowrap;
 }
 .banner__img {
   color: rgb(32, 32, 39);
@@ -329,11 +339,11 @@ a {
 }
 
 .cart-box {
-  margin-top: 40px;
   display: flex;
   gap: 32px;
   -moz-columns: 3;
        columns: 3;
+  align-items: flex-start;
 }
 
 .fon__star {
@@ -409,8 +419,9 @@ a {
   padding: 48px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
+  align-content: flex-start;
 }
 .preview-game__title {
   color: rgb(32, 32, 39);
@@ -448,8 +459,7 @@ a {
   color: rgb(32, 32, 39);
 }
 .preview-game__img {
-  max-width: 600px;
-  max-height: 500px;
+  height: 500px;
   border-radius: 30px;
 }
 
@@ -477,6 +487,7 @@ a {
   .top {
     height: 700px;
     background-image: none;
+    background-image: url("img/Vectorfon.svg"), url("img/Star2.svg"), url("img/Star3.svg"), url("img/Star4.svg"), url("img/Star5.svg");
     background-image: url("img/Vectorfon.svg"), url("img/Star 2.svg"), url("img/Star 3.svg"), url("img/Star 4.svg"), url("img/Star 5.svg");
     background-position: calc(100% - 0px) 0px, calc(0% + 37px) 97px, calc(0% + 91px) 64px, calc(100% - 34px) 580px, calc(100% - 86px) 557px;
   }
@@ -517,6 +528,10 @@ a {
     font-size: 16px;
     font-weight: 700;
     line-height: 18px;
+  }
+  .banner__img {
+    padding-right: 27px;
+    padding-left: 27px;
   }
   .container {
     display: none;
