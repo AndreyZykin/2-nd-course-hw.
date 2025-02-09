@@ -123,6 +123,16 @@ a {
   padding-right: 51px;
   padding-left: 51px;
 }
+.banner__img {
+  color: rgb(32, 32, 39);
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 4%;
+  text-align: left;
+  text-transform: uppercase;
+}
 
 .container {
   background: #202027;
@@ -478,6 +488,7 @@ a {
     height: 700px;
     background-image: none;
     background-image: url("img/Vectorfon.svg"), url("img/Star2.svg"), url("img/Star3.svg"), url("img/Star4.svg"), url("img/Star5.svg");
+    background-image: url("img/Vectorfon.svg"), url("img/Star 2.svg"), url("img/Star 3.svg"), url("img/Star 4.svg"), url("img/Star 5.svg");
     background-position: calc(100% - 0px) 0px, calc(0% + 37px) 97px, calc(0% + 91px) 64px, calc(100% - 34px) 580px, calc(100% - 86px) 557px;
   }
   .header__title {
