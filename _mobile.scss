@@ -1,5 +1,4 @@
 @media (max-width: 375px) {
-
     .center {
             padding-left: 16px;
             padding-right: 16px;
@@ -49,84 +48,7 @@
     &__text{
         font-size: 16px;
         font-weight: 700;
-.center {
-        padding-left: 16px;
-        padding-right: 16px;
- }
-
-.top{
-    height: 700px;
-    background-image: none;
-    background-image: url("img/Vectorfon.svg"), url("img/Star 2.svg"), 
-    url("img/Star 3.svg"), url("img/Star 4.svg"), url("img/Star 5.svg");
-    background-position: calc(100% - 0px) 0px, calc(0% + 37px) 97px, calc(0% + 91px) 64px, calc(100% - 34px) 580px, calc(100% - 86px) 557px;
-}
-
-.header__title{
-        padding-top: 147px;
-        font-size: 40px;
-        font-weight: 700;
-        text-align: center;
-        line-height: 49px;
-        font-family: Montserrat;
-}
- .header__text{
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
- }
- .btn{
-    width: 285px;
-    height: 55px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 141.69%;
-    text-align: center;
-    pointer-events: none;
-    &__link{
-        display: flex;
-        justify-content: center;
-    }
- }
- .banner{
-    height: 51px;
-    top: 649px;
-    left: -6px;
-    padding: 16px 24px 16px 24px;
-    overflow-x: hidden;
-}
-.banner__text{
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 18px;
-}
-.container{
-    display: none;
-}
-
-
-.minigame {
-    padding-bottom: 48px;
-    overflow-x: hidden;
-    &__title {
-        color: rgb(255, 255, 255);
-        font-family: inherit;
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 49px;
-        text-align: left;
-        margin-bottom: 16px;
-        
- }
-}
-.preview-game{
-    position: relative;
-    height: auto;
-    display: flex;
-    flex-direction: column-reverse;
-    &--right {
-        flex-direction: column;
-
+        line-height: 18px;
     }
     &__img{
         padding-right: 27px;
