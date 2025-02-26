@@ -1,0 +1,45 @@
+@media (max-width: 1024px) {
+    .center {
+        padding-left: 24px;
+        padding-right: 24px;
+}
+
+.text2{
+        margin-top: 20px;
+    }
+    .header__title{
+        font-size: 48px;
+    }
+.text3 {
+        height: 90px;
+        margin-top: 20px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+.minigame {
+    padding-bottom: 40px;
+}
+.preview-game {
+    &__text {
+        padding: 30px;
+    }
+    &__title {
+        font-size: 32px;
+        line-height: 45px;
+    }
+    &__description {
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 18px;  
+    }
+    &__button {
+        margin-top: 20px;
+    }
+    &__br {
+        display: none;
+    }
+}
+    }
+    
+    @media (min-width: 768px) and 
+(max-width: 833px) {}
