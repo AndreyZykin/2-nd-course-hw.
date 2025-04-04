@@ -16,16 +16,19 @@ function isEven(number) {
     return "Число нечетное";
   }
 }
-console.log(isEven(7));
-console.log(isEven(2));
+const result = isEven(5);
+console.log(result);
 
 function printSquare(number) {
   console.log(number * number);
 }
+printSquare (5);
 
 function getSquare(number) {
   return number * number;
 }
+const total = getSquare(7);
+console.log(total);
 
 function greetUserByAge() {
   const age = parseInt(prompt("Сколько вам лет?"));
@@ -38,13 +41,8 @@ function greetUserByAge() {
     alert("Добро пожаловать!");
   }
 }
-function multiplyNumbers(num1, num2) {
-  if (isNaN(parseFloat(num1)) || isNaN(parseFloat(num2))) {
-    return "Одно или оба значения не являются числом";
-  } else {
-    return num1 * num2;
-  }
-}
+greetUserByAge();
+
 function cubeNumber() {
   const input = prompt("Введите число:");
   const number = parseFloat(input);
@@ -56,6 +54,10 @@ function cubeNumber() {
     return `Число ${number} в кубе равняется ${cube}`;
   }
 }
+const finish = cubeNumber();
+console.log(finish);
+
+
 const circle1 = {
   radius: 0,
   getArea: function () {
@@ -65,6 +67,9 @@ const circle1 = {
     return 2 * Math.PI * this.radius;
   },
 };
+circle1.radius = 5;
+console.log(`Площадь circle1: ${circle1.getArea()}`);
+console.log(`Периметр circle1: ${circle1.getPerimeter()}`);
 
 const circle2 = {
   radius: 0,
@@ -75,3 +80,7 @@ const circle2 = {
     return 2 * Math.PI * this.radius;
   },
 };
+
+circle2.radius = 3;
+console.log(`Площадь circle2: ${circle2.getArea()}`);
+console.log(`Периметр circle2: ${circle2.getPerimeter()}`);
