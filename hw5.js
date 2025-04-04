@@ -1,3 +1,25 @@
+const randomNumber = Math.floor(Math.random() * 100) + 1;
+
+function getUserInput() {
+  const guess = parseInt(prompt("Угадайте число от 1 до 100:"));
+  return guess;
+}
+
+function playGame() {
+  let guess = getUserInput();
+
+  while (guess !== randomNumber) {
+    if (guess < randomNumber) {
+      guess = getUserInput("Ваше число меньше загаданного. Попробуйте ещё раз:");
+    } else if (guess > randomNumber) {
+      guess = getUserInput("Ваше число больше загаданного. Попробуйте ещё раз:");
+    }
+  }
+
+  alert("Поздравляем! Вы угадали число!");
+}
+playGame();
+
 function number(a, b) {
   if (a < b) {
     return a;
