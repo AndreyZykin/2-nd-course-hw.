@@ -24,7 +24,7 @@ function playGame() {
 
   alert("Поздравляем! Вы угадали число!");
 }
-playGame();
+
 
 function number(a, b) {
   if (a < b) {
