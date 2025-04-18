@@ -1,4 +1,4 @@
-@media (max-width: 375px) {
+@media (max-width: 767px) {
     .center {
             padding-left: 16px;
             padding-right: 16px;
@@ -84,6 +84,7 @@
         }
         &__text {
             padding: 29px 29px 32px 29px;
+            display: block;
         }
         &__title {
             font-size: 32px;

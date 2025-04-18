@@ -1,9 +1,71 @@
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .center {
         padding-left: 24px;
         padding-right: 24px;
 }
-
+.cart-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+.title__text {
+    width: 720px;
+}
+.cart-b1{
+    display: flex;
+    gap: 32px;
+}
+.cart1{
+    width: 320px;
+}
+.cart-img1{
+    width: 320px;
+}
+.cart4{
+    margin-top: 0px;
+    width: 320px;
+    height: 473px;
+}
+.cart-img4{
+    width: 320px;
+}
+.cart-b2{
+    display: flex;
+    gap: 32px;
+}
+.cart2{
+    width: 320px;
+    height: 473px;
+}
+.cart-img2{
+    width: 320px;
+}
+.cart5{
+    margin-top: 0px;
+    width: 320px;
+    height: 473px;
+}
+.cart-img5{
+    width: 320px;
+}
+.cart-b3{
+    display: flex;
+    gap: 32px;
+}
+.cart3{
+    width: 320px;
+}
+.cart-img3{
+    width: 320px;
+}
+.cart6{
+    margin-top: 0px;
+    width: 320px;
+    height: 473px;
+}
+.cart-img6{
+    width: 320px;
+}
 .text2{
         margin-top: 20px;
     }
@@ -18,10 +80,12 @@
     }
 .minigame {
     padding-bottom: 40px;
+    overflow-x: hidden;
 }
 .preview-game {
     &__text {
         padding: 30px;
+        flex-direction: column;
     }
     &__title {
         font-size: 32px;
@@ -38,8 +102,10 @@
     &__br {
         display: none;
     }
-}
+    &__img {
+        height: 350px;
     }
-    
-    @media (min-width: 768px) and 
-(max-width: 833px) {}
+}
+}
+
+

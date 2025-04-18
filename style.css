@@ -126,7 +126,6 @@ a {
 
 .container {
   background: #202027;
-  height: 1470px;
   background-image: url(img/Star\ 12.svg), url(img/Star\ 11.svg), url(img/Star\ 12mini.svg);
   background-repeat: no-repeat;
   background-position: calc(100% + 10px) 150px, calc(0% + 25px) 770px, calc(0% + 40px) 820px;
@@ -208,8 +207,8 @@ a {
   background-color: #fff;
   width: 378px;
   margin-top: 36px;
-  border-radius: 30px;
   height: 551px;
+  border-radius: 30px;
 }
 
 .cart5 {
@@ -409,7 +408,6 @@ a {
   padding: 48px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   align-items: flex-start;
   align-content: flex-start;
 }
@@ -469,10 +467,73 @@ a {
   text-align: center;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .center {
     padding-left: 24px;
     padding-right: 24px;
+  }
+  .cart-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .title__text {
+    width: 720px;
+  }
+  .cart-b1 {
+    display: flex;
+    gap: 32px;
+  }
+  .cart1 {
+    width: 320px;
+  }
+  .cart-img1 {
+    width: 320px;
+  }
+  .cart4 {
+    margin-top: 0px;
+    width: 320px;
+    height: 473px;
+  }
+  .cart-img4 {
+    width: 320px;
+  }
+  .cart-b2 {
+    display: flex;
+    gap: 32px;
+  }
+  .cart2 {
+    width: 320px;
+    height: 473px;
+  }
+  .cart-img2 {
+    width: 320px;
+  }
+  .cart5 {
+    margin-top: 0px;
+    width: 320px;
+    height: 473px;
+  }
+  .cart-img5 {
+    width: 320px;
+  }
+  .cart-b3 {
+    display: flex;
+    gap: 32px;
+  }
+  .cart3 {
+    width: 320px;
+  }
+  .cart-img3 {
+    width: 320px;
+  }
+  .cart6 {
+    margin-top: 0px;
+    width: 320px;
+    height: 473px;
+  }
+  .cart-img6 {
+    width: 320px;
   }
   .text2 {
     margin-top: 20px;
@@ -488,9 +549,11 @@ a {
   }
   .minigame {
     padding-bottom: 40px;
+    overflow-x: hidden;
   }
   .preview-game__text {
     padding: 30px;
+    flex-direction: column;
   }
   .preview-game__title {
     font-size: 32px;
@@ -507,8 +570,11 @@ a {
   .preview-game__br {
     display: none;
   }
+  .preview-game__img {
+    height: 350px;
+  }
 }
-@media (max-width: 375px) {
+@media (max-width: 767px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
@@ -588,6 +654,7 @@ a {
   }
   .preview-game__text {
     padding: 29px 29px 32px 29px;
+    display: block;
   }
   .preview-game__title {
     font-size: 32px;
