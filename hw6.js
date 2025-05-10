@@ -1,9 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const game2 = document.getElementById('game2');
-    game2.addEventListener('click', function() {
-      playGame();
-    });
-  });
+  document.getElementById('start-game').addEventListener('click', function() {
+    playGame();
+});
      // Функция для генерации случайной арифметической задачи
      function generateTask() {
         const operators = ['+', '-', '*', '/'];
@@ -62,22 +59,22 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
 
-const array = [1, 5, 4, 10, 0, 3];
+const array1 = [1, 5, 4, 10, 0, 3];
 
-for (let i = 0; i < array.length; i++) {
+for (let i = 0; i < array1.length; i++) {
   if (array[i] === 10) {
-    console.log(array[i]);
+    console.log(array1[i]);
     break; // Прерываем цикл, когда встречается значение 10
   }
-  console.log(array[i]);
+  console.log(array1[i]);
 }
 
-const array = [1, 5, 4, 10, 0, 3];
-const index = array.indexOf(4);
+const array2 = [1, 5, 4, 10, 0, 3];
+const index = array2.indexOf(4);
 console.log(index); 
 
-const array = [1, 3, 5, 10, 20];
-const result = array.join(' ');
+const array3 = [1, 3, 5, 10, 20];
+const result = array3.join(' ');
 console.log(result); 
 
 const matrix = [];
@@ -92,31 +89,31 @@ for (let i = 0; i < 3; i++) {
 
 console.log(matrix);
 
-let array = [1, 1, 1];
-array.push(2, 2, 2);
-console.log(array); // [1, 1, 1, 2, 2, 2]
+let array4 = [1, 1, 1];
+array4.push(2, 2, 2);
+console.log(array4); // [1, 1, 1, 2, 2, 2]
 
-let array = [9, 8, 7, 'a', 6, 5];
+let array5 = [9, 8, 7, 'a', 6, 5];
 
 // Удаляем букву 'a'
-array = array.filter(item => item !== 'a');
+array5 = array5.filter(item => item !== 'a');
 
 // Сортируем массив
-array.sort((a, b) => {
+array5.sort((a, b) => {
     // Приводим элементы к числам для корректной сортировки
     return a - b;
 });
 
-console.log(array);
+console.log(array5);
 
 // Исходный массив
-const array = [9, 8, 7, 6, 5];
+const array6 = [9, 8, 7, 6, 5];
 
 // Запрашиваем у пользователя число
-const userGuess = prompt("Угадайте число из массива: " + array.join(", "));
+const userGuess = prompt("Угадайте число из массива: " + array6.join(", "));
 
 // Проверяем, угадал ли пользователь
-if (array.includes(Number(userGuess))) {
+if (array6.includes(Number(userGuess))) {
     alert("Угадал");
 } else {
     alert("Не угадал");
@@ -126,8 +123,8 @@ let str = 'abcdef';
 let reversedStr = str.split('').reverse().join('');
 console.log(reversedStr);
 
-const array = [[1, 2, 3], [4, 5, 6]];
-const flattenedArray = [...array[0], ...array[1]];
+const array7 = [[1, 2, 3], [4, 5, 6]];
+const flattenedArray = [...array7[0], ...array7[1]];
 console.log(flattenedArray);
 
 // Создаем массив с произвольными числами от 1 до 10
@@ -144,8 +141,8 @@ function getSquares(arr) {
 }
 
 // Пример использования:
-const numbers = [1, 2, 3, 4, 5];
-const squares = getSquares(numbers);
+const number = [1, 2, 3, 4, 5];
+const squares = getSquares(number);
 console.log(squares); // Вывод: [1, 4, 9, 16, 25]
 
 function getWordLengths(words) {
@@ -162,8 +159,8 @@ function getNegativeNumbers(arr) {
 }
 
 // Пример использования
-const numbers = [1, -2, 3, -4, 5, -6];
-const negativeNumbers = getNegativeNumbers(numbers);
+const numb = [1, -2, 3, -4, 5, -6];
+const negativeNumbers = getNegativeNumbers(numb);
 console.log(negativeNumbers); // Вывод: [-2, -4, -6]
 
 // Генерация массива из 10 случайных значений от 0 до 10
