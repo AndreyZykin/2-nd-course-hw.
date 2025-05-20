@@ -103,10 +103,10 @@ function generateRandomArray(maxNumber) {
 console.log(displayDate);
 
 // Создаем переменную currentDate и присваиваем ей текущую дату
-const currentDate = new Date();
+const currentDate1 = new Date();
 
 // Создаем новую дату, которая наступит через 73 дня после текущей
-const futureDate = new Date(currentDate.getTime() + 73 * 24 * 60 * 60 * 1000);
+const futureDate = new Date(currentDate1.getTime() + 73 * 24 * 60 * 60 * 1000);
 
 // Выводим дату в консоль
 console.log(futureDate);
