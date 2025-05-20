@@ -19,3 +19,14 @@ document.getElementById('playButton').addEventListener('click', function() {
 
             alert(`Ваш выбор: ${userChoice}\nВыбор компьютера: ${computerChoice}\nРезультат: ${result}`);
         });
+
+        const people = [
+   { name: 'Глеб', age: 29 },
+   { name: 'Анна', age: 17 },
+   { name: 'Олег', age: 7 },
+   { name: 'Оксана', age: 47 }
+];
+
+// Используем метод sort с колбэком для сравнения возрастов
+console.log(people.sort((a, b) => a.age - b.age));
+
