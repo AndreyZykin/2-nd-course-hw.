@@ -1,81 +1,82 @@
-  document.getElementById('start-game').addEventListener('click', function() {
+document.getElementById('start-game').addEventListener('click', function() {
     playGame();
 });
-     // Функция для генерации случайной арифметической задачи
-     function generateTask() {
-        const operators = ['+', '-', '*', '/'];
-        const operator = operators[Math.floor(Math.random() * operators.length)];
-        const num1 = Math.floor(Math.random() * 20) + 1;
-        const num2 = Math.floor(Math.random() * 20) + 1;
 
-        let task;
-        let result;
+// Функция для генерации случайной арифметической задачи
+function generateTask() {
+    const operators = ['+', '-', '*', '/'];
+    const operator = operators[Math.floor(Math.random() * operators.length)];
+    const num1 = Math.floor(Math.random() * 20) + 1;
+    const num2 = Math.floor(Math.random() * 20) + 1;
 
-        switch (operator) {
-            case '+':
-                task = `${num1} + ${num2}`;
-                result = num1 + num2;
-                break;
-            case '-':
-                task = `${num1} - ${num2}`;
-                result = num1 - num2;
-                break;
-            case '*':
-                task = `${num1} * ${num2}`;
-                result = num1 * num2;
-                break;
-            case '/':
-                task = `${num1} / ${num2}`;
-                result = num1 / num2;
-                break;
-        }
+    let task; // Задача
+    let taskResult; // Результат задачи
 
-        return { task, result };
+    switch (operator) {
+        case '+':
+            task = `${num1} + ${num2}`;
+            taskResult = num1 + num2;
+            break;
+        case '-':
+            task = `${num1} - ${num2}`;
+            taskResult = num1 - num2;
+            break;
+        case '*':
+            task = `${num1} * ${num2}`;
+            taskResult = num1 * num2;
+            break;
+        case '/':
+            if (num2 === 0) num2 = 1; // Избегаем деления на ноль
+            task = `${num1} / ${num2}`;
+            taskResult = num1 / num2;
+            break;
     }
 
-    // Основная функция игры
-    function playGame() {
-        const { task, result } = generateTask();
-        const userAnswer = prompt(`Решите задачу: ${task}`);
+    return { task, result: taskResult }; // Возвращаем объект с задачей и результатом
+}
 
-        if (userAnswer === null) {
-            alert('Игра отменена.');
-            return;
-        }
+// Основная функция игры
+function playGame() {
+    const { task, result: correctAnswer } = generateTask(); // Используем деструктуризацию
+    const userAnswer = prompt(`Решите задачу: ${task}`);
 
-        const parsedAnswer = parseFloat(userAnswer);
+    if (userAnswer === null) {
+        alert('Игра отменена.');
+        return;
+    }
 
-        if (isNaN(parsedAnswer)) {
-            alert('Пожалуйста, введите числовое значение.');
-            playGame(); // Повторный вызов игры
-            return;
-        }
+    const parsedAnswer = parseFloat(userAnswer);
 
-        if (parsedAnswer === result) {
-            alert('Верно!');
-        } else {
-            alert(`Ошибка! Правильный ответ: ${result}`);
-        }
-    };
+    if (isNaN(parsedAnswer)) {
+        alert('Пожалуйста, введите числовое значение.');
+        playGame(); // Повторный вызов игры
+        return;
+    }
 
+    if (parsedAnswer === correctAnswer) {
+        alert('Верно!');
+    } else {
+        alert(`Ошибка! Правильный ответ: ${correctAnswer}`);
+    }
+}
 
 const array1 = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; i < array1.length; i++) {
-  if (array[i] === 10) {
+    if (array1[i] === 10) { // Исправлено на array1
+        console.log(array1[i]);
+        break; // Прерываем цикл, когда встречается значение 10
+    }
     console.log(array1[i]);
-    break; // Прерываем цикл, когда встречается значение 10
-  }
-  console.log(array1[i]);
 }
 
 const array2 = [1, 5, 4, 10, 0, 3];
-const index = array2.indexOf(4);
-console.log(index); 
+const indexOfFour = array2.indexOf(4); // Переименовано для уникальности
+console.log(indexOfFour); 
 
 const array3 = [1, 3, 5, 10, 20];
-const result = array3.join(' ');
-console.log(result); 
+const joinedResult = array3.join(' '); // Переименовано для уникальности
+console.log(joinedResult); 
 
 const matrix = [];
 
@@ -141,8 +142,8 @@ function getSquares(arr) {
 }
 
 // Пример использования:
-const number = [1, 2, 3, 4, 5];
-const squares = getSquares(number);
+const numberArray = [1, 2, 3, 4, 5]; // Переименовано для уникальности
+const squares = getSquares(numberArray);
 console.log(squares); // Вывод: [1, 4, 9, 16, 25]
 
 function getWordLengths(words) {
@@ -174,12 +175,12 @@ console.log("Исходный массив:", randomArray);
 console.log("Массив четных значений:", evenNumbers);
 
 // Генерация массива из 6 элементов с помощью Math.random()
-const array = Array.from({ length: 6 }, () => Math.floor(Math.random() * 10) + 1);
+const randomArray2 = Array.from({ length: 6 }, () => Math.floor(Math.random() * 10) + 1);
 
 // Вычисление среднего арифметического
-const sum = array.reduce((acc, num) => acc + num, 0);
-const average = sum / array.length;
+const sum = randomArray2.reduce((acc, num) => acc + num, 0);
+const average = sum / randomArray2.length;
 
 // Вывод в консоль
-console.log("Сгенерированный массив:", array);
+console.log("Сгенерированный массив:", randomArray2);
 console.log("Среднее арифметическое:", average);
