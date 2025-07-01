@@ -1,5 +1,5 @@
 document.getElementById('start-game').addEventListener('click', function() {
-    playGame();
+    playArithmeticGame(); 
 });
 
 // Функция для генерации случайной арифметической задачи
@@ -36,7 +36,7 @@ function generateTask() {
 }
 
 // Основная функция игры
-function playGame() {
+function playArithmeticGame() {
     const { task, result: correctAnswer } = generateTask(); // Используем деструктуризацию
     const userAnswer = prompt(`Решите задачу: ${task}`);
 

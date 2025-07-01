@@ -43,7 +43,8 @@
         top: 649px;
         left: -6px;
         padding: 16px 24px 16px 24px;
-        overflow-x: hidden;
+       overflow-x: auto;
+    white-space: nowrap;
    
     &__text{
         font-size: 16px;

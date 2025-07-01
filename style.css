@@ -101,15 +101,14 @@ a {
   display: flex;
   align-items: center;
   height: 90px;
-  overflow-x: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 .banner__text {
   font-family: Montserrat;
   font-size: 30px;
   font-weight: 700;
   line-height: 33px;
-  text-transform: uppercase;
-  white-space: nowrap;
 }
 .banner__img {
   color: rgb(32, 32, 39);
@@ -617,7 +616,8 @@ a {
     top: 649px;
     left: -6px;
     padding: 16px 24px 16px 24px;
-    overflow-x: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
   }
   .banner__text {
     font-size: 16px;
